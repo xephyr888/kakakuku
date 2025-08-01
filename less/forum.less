@@ -1,0 +1,89 @@
+.GrowBoxConstructorModal {
+  .constructor-container {
+    display: flex;
+    gap: 20px;
+    
+    .part-selection {
+      flex: 2;
+    }
+    
+    .summary-panel {
+      flex: 1;
+      border-left: 1px solid #eee;
+      padding-left: 20px;
+    }
+  }
+}
+
+.PartSelector {
+  .PartCategory {
+    margin-bottom: 20px;
+    
+    h3 {
+      margin-bottom: 10px;
+    }
+  }
+  
+  .PartOptions {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+  }
+  
+  .PartOption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: all 0.2s;
+    
+    &.active {
+      border-color: #4CAF50;
+      background-color: rgba(76, 175, 80, 0.1);
+    }
+    
+    .PartName {
+      font-weight: bold;
+    }
+    
+    .PartPrice {
+      color: #666;
+      font-size: 0.9em;
+    }
+  }
+}
+
+.SummaryPanel {
+  h3 {
+    margin-bottom: 15px;
+  }
+  
+  .SelectedParts {
+    margin-bottom: 15px;
+    
+    .SelectedPart {
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 0;
+      border-bottom: 1px solid #eee;
+      
+      .PartType {
+        font-weight: bold;
+        text-transform: capitalize;
+      }
+    }
+  }
+  
+  .TotalPrice {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: right;
+    margin: 15px 0;
+  }
+  
+  .GenerateButton {
+    width: 100%;
+  }
+}

@@ -1,0 +1,14 @@
+growbox-constructor:
+  forum:
+    open_constructor: "Grow Box Constructor"
+    constructor_title: "Grow Box Constructor"
+    generate_links: "Generate Marketplace Links"
+    no_parts_selected: "Please select at least one component"
+    links_generated: "Links generated successfully!"
+    
+  admin:
+    settings:
+      ozon_enabled: "Enable Ozon integration"
+      ozon_partner_id: "Ozon Partner ID"
+      wb_enabled: "Enable Wildberries integration"
+      wb_partner_id: "Wildberries Partner ID"
